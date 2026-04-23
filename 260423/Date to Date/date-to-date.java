@@ -16,14 +16,15 @@ public class Main {
         d2 = Integer.parseInt(tmp[3]);
 
         int[] days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        int sum = 0;
+        int sum = 1;
 
         while (true) {
             if (m1 == m2 && d1 == d2)
                 break;
-                
+
             d1++;
             sum++;
+
             if (d1 > days[m1]) {
                 m1++;
                 d1 = 1;
